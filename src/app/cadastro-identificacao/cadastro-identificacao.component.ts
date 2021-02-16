@@ -44,7 +44,7 @@ export class CadastroIdentificacaoComponent implements OnInit {
       this.consumer.telefone = this.consumer.telefone.toString()
       this.cadastroIdentificacaoService.registerConsumer(this.consumer).then((response: any) => { 
       
-        this.router.navigate(['/ligacao']);
+        this.router.navigate(['/encerramento']);
 
       }).catch((error:any) => {
         console.log(error)

@@ -12,7 +12,6 @@ import { SafeResourceUrl } from '@angular/platform-browser';
  import { CadastroIdentificacaoComponent } from './cadastro-identificacao/cadastro-identificacao.component';
  import { EncerramentoComponent } from './encerramento/encerramento.component';
  import { EnvioTokenComponent } from './envio-token/envio-token.component';
- import { LigacaoComponent } from './ligacao/ligacao.component';
  import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
  import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
  import { RegulamentoCampanhaComponent } from './regulamento-campanha/regulamento-campanha.component';
@@ -50,13 +49,7 @@ const routes: Routes = [
     path: 'token',
     component: EnvioTokenComponent
   },
-
   {
-    path: 'ligacao',
-    component: LigacaoComponent
-  },
-
-   {
     path: 'politica-privacidade',
     component: PoliticaPrivacidadeComponent
   },
@@ -85,7 +78,6 @@ const routes: Routes = [
      CadastroIdentificacaoComponent,
      EncerramentoComponent,
      EnvioTokenComponent,
-     LigacaoComponent,
      PaginaInicialComponent,
      PoliticaPrivacidadeComponent,
      RegulamentoCampanhaComponent,
@@ -111,9 +103,7 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatNativeDateModule,
     MatInputModule,
-    HttpClientModule,
-    
-    
+    HttpClientModule    
   ],
 
   providers: [
