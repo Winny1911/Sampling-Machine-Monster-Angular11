@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EncerramentoComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    this.myAngularxQrCode = 'Your QR code data string';
+  }
+
+  public myAngularxQrCode: string = null;
 
   ngOnInit(): void {
   }

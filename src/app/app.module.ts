@@ -18,12 +18,12 @@ import { SafeResourceUrl } from '@angular/platform-browser';
  import { TelaDesktopAtendenteEsperaComponent } from './tela-desktop-atendente-espera/tela-desktop-atendente-espera.component';
  import { TokenAcessoComponent } from './token-acesso/token-acesso.component';
 
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatInputModule} from '@angular/material/input';
 import {MatNativeDateModule} from '@angular/material/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { QRCodeModule } from 'angularx-qrcode';
 
 const routes: Routes = [
   {
@@ -103,7 +103,8 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatNativeDateModule,
     MatInputModule,
-    HttpClientModule    
+    HttpClientModule,
+    QRCodeModule    
   ],
 
   providers: [
