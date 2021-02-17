@@ -8,15 +8,11 @@ import { NgxMaskModule } from 'ngx-mask'
 import { SafeResourceUrl } from '@angular/platform-browser';
 //Pages 
  import { AppComponent } from './app.component';
- import { AceiteNaoComponent } from './aceite-nao/aceite-nao.component';
  import { CadastroIdentificacaoComponent } from './cadastro-identificacao/cadastro-identificacao.component';
  import { EncerramentoComponent } from './encerramento/encerramento.component';
- import { EnvioTokenComponent } from './envio-token/envio-token.component';
  import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
  import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
  import { RegulamentoCampanhaComponent } from './regulamento-campanha/regulamento-campanha.component';
- import { TelaDesktopAtendenteEsperaComponent } from './tela-desktop-atendente-espera/tela-desktop-atendente-espera.component';
- import { TokenAcessoComponent } from './token-acesso/token-acesso.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import {MatDatepickerModule} from '@angular/material/datepicker';
@@ -31,11 +27,6 @@ const routes: Routes = [
     component: PaginaInicialComponent  
   },
   {
-    path: 'nao-aceite',
-    component: AceiteNaoComponent
-  },
-
-  {
     path: 'cadastro',
     component: CadastroIdentificacaoComponent
   },
@@ -43,11 +34,6 @@ const routes: Routes = [
   {
     path: 'encerramento',
     component: EncerramentoComponent
-  },
-
-   {
-    path: 'token',
-    component: EnvioTokenComponent
   },
   {
     path: 'politica-privacidade',
@@ -57,32 +43,18 @@ const routes: Routes = [
   {
     path: 'regulamento',
     component: RegulamentoCampanhaComponent
-  },
-
-  {
-    path: 'tela-espera',
-    component: TelaDesktopAtendenteEsperaComponent
-  },
-
-  {
-    path: 'acesso-token',
-    component: TokenAcessoComponent
   }
-
+ 
 ]
 
 @NgModule({
   declarations: [
-    AppComponent,
-     AceiteNaoComponent,
+    AppComponent,     
      CadastroIdentificacaoComponent,
-     EncerramentoComponent,
-     EnvioTokenComponent,
+     EncerramentoComponent,     
      PaginaInicialComponent,
      PoliticaPrivacidadeComponent,
-     RegulamentoCampanhaComponent,
-     TelaDesktopAtendenteEsperaComponent,
-     TokenAcessoComponent
+     RegulamentoCampanhaComponent     
   ],
 
   imports: [
